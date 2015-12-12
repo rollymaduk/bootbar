@@ -12,8 +12,10 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
-  api.addFiles('bootbar.js');
-  api.addFiles('bootbar.css');
+  api.use('jquery');
+  api.addFiles('bootbar.js','client');
+  api.addFiles('bootbar.css','client');
+  api.export('bootbar','client');
 });
 
 Package.onTest(function(api) {
