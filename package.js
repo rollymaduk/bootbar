@@ -21,5 +21,5 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('rollypolly:bootbar');
-  api.addFiles('bootbar-tests.js');
+  api.addFiles('bootbar-tests.js',['client','server']);
 });
